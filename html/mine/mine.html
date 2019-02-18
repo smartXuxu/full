@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>我的</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/mine/mine.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+</head>
+<body>
+<!---->
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">个人中心</h1>
+        <button class="mui-btn mui-btn-link mui-pull-right" onclick="location.href='setting.html'">设置</button>
+    </header>
+    <div class="header-bg" onclick="location.href='./mine_data.html'">
+        <img src="../../img/focus-img1.png" alt=""/>
+        <em>阳光正好</em>
+    </div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right" href="./mine-study.html">
+                <em class="iconfont icon-ai-book"></em>
+                我的学习
+            </a>
+        </li>
+
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right" href="./mine-account.html">
+                <em class="iconfont icon-mingpian2"></em>
+                账户管理
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+        <a class="mui-navigate-right" href="./mine-publish.html">
+            <em class="iconfont icon-fabu"></em>
+            我发布的
+        </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right" href="./mine-message.html">
+                <em class="iconfont icon-xiaoxi1"></em>
+                消息中心
+            </a>
+        </li>
+        <li class="mui-table-view-cell">
+            <a class="mui-navigate-right" href="mine-idea.html">
+                <em class="iconfont icon-yijian"></em>
+                意见反馈
+            </a>
+        </li>
+    </ul>
+    <div id="footer"></div>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+        mui('body').on('tap','a',function(){document.location.href=this.href;});
+        $('#footer').load('../common/footer.html');
+        setTimeout(function () {
+            $("#footer .mui-tab-item:last-of-type").addClass(".mui-active").children("em").removeClass("icon-wode").addClass("icon-wodedangxuan")
+        },300)
+    })
+</script>
+</html>

@@ -1,0 +1,87 @@
+/*�������*/
+/*������ɫ*/
+html {
+  background-color: #eeeeee;
+}
+.layer main {
+  padding: 0 0.3rem;
+}
+.layer main > .box {
+  background-color: #fff;
+  padding: 0.3rem;
+}
+.layer main > .box > div {
+  height: 1rem;
+  line-height: 1rem;
+}
+.layer main > .box > div.active del {
+  color: #fba940;
+}
+.layer main > .box > div.air_pay i {
+  color: #0eadf3;
+}
+.layer main > .box > div.weChat i {
+  color: #42b035;
+}
+.layer main > .box > div > em {
+  margin-right: 0.2rem;
+  font-size: 0.3rem;
+}
+.layer main > .box > div > s {
+  width: 40%;
+}
+.layer main > .box > div > s > i {
+  font-size: 0.5rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+.layer main > .box > div > del {
+  width: 30%;
+  font-size: 0.4rem;
+  color: #666;
+  text-align: right;
+}
+.layer main > .box > .total-money {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  height: 2.1rem;
+}
+.layer main > .box > .total-money:after {
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  top: 28%;
+  width: 0.6rem;
+  height: 0.6rem;
+  z-index: 3;
+  font-size: 0.5rem;
+}
+.layer main > .box > .total-money > del {
+  display: block;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.3rem;
+}
+.layer main > .box > .total-money > input {
+  padding-left: 10%;
+  width: 80%;
+  border: none;
+}
+.layer main > .box > button {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  background-color: #30aafa;
+}
+.layer main > .box > span {
+  font-size: 0.24rem;
+  height: 0.6rem;
+  margin-top: 0.1rem;
+}
+.layer main > .box > span > s {
+  color: #30aafa;
+}

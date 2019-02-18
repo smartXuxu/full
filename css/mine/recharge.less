@@ -1,0 +1,95 @@
+@import "../common";
+html{
+  background-color: #eeeeee;
+}
+.layer{
+  main{
+    padding:0 .3rem;
+    >.box{
+      background-color: #fff;
+      padding:.3rem;
+      >div{
+        height: 1rem;
+        line-height: 1rem;
+        &.active{
+          del{
+            color:#fba940;
+          }
+        }
+        &.air_pay{
+          i{
+            color:#0eadf3;
+          }
+        }
+        &.weChat{
+          i{
+            color:#42b035;
+          }
+        }
+        >em{
+          margin-right: .2rem;
+          font-size:.3rem;
+        }
+        >s{
+          width: 40%;
+          >i{
+            font-size: .5rem;
+            margin-right: .3rem;
+            vertical-align: middle;
+          }
+        }
+        >del{
+          width: 30%;
+          font-size: .4rem;
+          color:#666;
+          text-align: right;
+        }
+      }
+      >.total-money{
+        border-top:1px solid #eee;
+        border-bottom:1px solid #eee;
+        position: relative;
+        height: 2.1rem;
+        &:after{
+          content:attr(data-content);
+          position: absolute;
+          left: 0;
+          top: 28%;
+          width: .6rem;
+          height: .6rem;
+          z-index: 3;
+          font-size: .5rem;
+        }
+        >del{
+          display: block;
+          height: .6rem;
+          line-height: .6rem;
+          font-size: .3rem;
+        }
+        >input{
+          padding-left: 10%;
+          width: 80%;
+
+          border: none;
+        }
+      }
+      >button{
+        height: .8rem;
+        line-height: .8rem;
+        width: 100%;
+        text-align: center;
+        font-size: .3rem;
+        color:#fff;
+        background-color: @baseColor;
+      }
+      >span{
+        font-size: .24rem;
+        height: .6rem;
+        margin-top: .1rem;
+        >s{
+          color:@baseColor;
+        }
+      }
+    }
+  }
+}

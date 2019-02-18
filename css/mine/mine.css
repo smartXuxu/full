@@ -1,0 +1,73 @@
+/*�������*/
+/*������ɫ*/
+html {
+  background-color: #eee;
+}
+.layer > #header {
+  height: 1.3rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  border-top: 0.3rem solid #30aafa;
+}
+.layer > #header > .mui-btn.mui-btn-link {
+  color: #333;
+}
+.layer > .header-bg {
+  height: 3rem;
+  width: 100%;
+  background: url("../../img/main-index_02.jpg") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  position: relative;
+  margin-top: 1.3rem;
+}
+.layer > .header-bg > img {
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  z-index: 5;
+  left: 10%;
+  top: 30%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.layer > .header-bg > em {
+  position: absolute;
+  z-index: 5;
+  left: 30%;
+  color: #fff;
+  top: 50%;
+  font-size: 0.3rem;
+}
+.mui-table-view {
+  border-top: 0.2rem solid #eee;
+}
+.mui-table-view .mui-table-view-cell:first-of-type em {
+  color: #fc8f36;
+}
+.mui-table-view .mui-table-view-cell:nth-of-type(3) {
+  border-bottom: 0.2rem solid #eee;
+}
+.mui-table-view .mui-table-view-cell:nth-of-type(3) em {
+  color: #fc8f36;
+}
+.mui-table-view .mui-table-view-cell:nth-of-type(2) em {
+  color: #3cc04f;
+}
+.mui-table-view .mui-table-view-cell:nth-of-type(4) em {
+  color: #ff4154;
+}
+.mui-table-view .mui-table-view-cell:last-of-type em {
+  color: #2184e1;
+}
+.mui-table-view .mui-table-view-cell a:not(.mui-btn) {
+  height: 1.2rem;
+  line-height: 1rem;
+  color: #666;
+}
+.mui-table-view .mui-table-view-cell a:not(.mui-btn) > em {
+  font-size: 0.5rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>零钱充值</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/mine/recharge.css"/>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <button class="mui-action-back mui-btn mui-btn-blue mui-btn-link mui-btn-nav mui-pull-left">
+            <span class="mui-icon mui-icon-left-nav"></span> 零钱充值</button>
+    </header>
+    <main>
+         <div class="box">
+             <div class="air_pay row active" data-type="0">
+             <em>充值方式：</em>
+             <s ><i class="iconfont icon-zhifubao"></i> 支付宝</s>
+             <del class="iconfont icon-radio"></del>
+         </div>
+             <div class="weChat row" data-type="1" >
+                 <em>充值方式：</em>
+                 <s> <i class="iconfont icon-weixinzhifu"></i>微信</s>
+                 <del class="iconfont icon-radio"></del>
+             </div>
+
+             <p class="total-money" data-content="￥">
+                 <del>充值金额</del>
+                 <input type="number"/>
+             </p>
+             <button>充值</button>
+         </div>
+    </main>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+$(function () {
+    $(".box>div").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+})
+</script>
+</html>

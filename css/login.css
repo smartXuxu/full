@@ -1,0 +1,138 @@
+.layer > .bg {
+  position: relative;
+  height: 6rem;
+  overflow: hidden;
+}
+.layer > .bg > img {
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.layer > .bg > .replay {
+  position: absolute;
+  height: 1rem;
+  line-height: 1rem;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.layer > .bg > .replay > a {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.32rem;
+}
+.layer > .bg > .replay > a.active:after {
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  right: 40%;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+.layer .login-inputs > input {
+  display: block;
+  margin-left: 5%;
+  width: 80%;
+  height: 1rem;
+  text-indent: 1em;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 1rem;
+  font-size: 0.3rem;
+}
+.layer .login-inputs > button {
+  margin-top: 0.5rem;
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  background-color: #0099fe;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.32rem;
+}
+.layer .login-inputs > .forget {
+  width: 100%;
+  text-align: right;
+  padding-right: 5%;
+  margin-top: 0.1rem;
+  color: #58b0fe;
+}
+.layer .login-inputs.register-inputs {
+  position: relative;
+}
+.layer .login-inputs.register-inputs .getCode {
+  position: absolute;
+  right: 3%;
+  top: 28%;
+  color: #0099fe;
+  text-align: center;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  width: 2rem;
+  font-size: 0.3rem;
+  border: 1px solid #0099fe;
+}
+.layer .login-inputs.register-inputs > .submit {
+  background-color: #e6e6e6;
+}
+.third_login {
+  width: 100%;
+  position: relative;
+  margin-top: 1.2rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+.third_login span:first-of-type {
+  position: absolute;
+  left: 7%;
+  top: 0%;
+  background: url("../img/line_03.png") center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 27%;
+  height: 100%;
+}
+.third_login span:last-of-type {
+  position: absolute;
+  right: 7%;
+  top: 0%;
+  background: url("../img/line_03.png") center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 27%;
+  height: 100%;
+}
+.third_login i {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 2rem;
+  color: #040000;
+  transform: translateX(-50%);
+}
+.link {
+  margin-top: 0.5rem;
+  position: relative;
+  left: 15%;
+}
+.link > a {
+  display: inline-block;
+  width: 30%;
+}
+.link img {
+  width: 30%;
+  margin-right: 0.2rem;
+}

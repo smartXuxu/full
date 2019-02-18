@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>音频详情页</title>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/publish/publish.css"/>
+</head>
+<body>
+<div class="layer" style="overflow-x: hidden">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <h1 class="mui-title">发表观点</h1>
+        <button class="mui-action-back mui-btn   mui-btn-nav mui-pull-left">
+            取消 </button>
+        <button class="mui-btn mui-pull-right">完成</button>
+    </header>
+    <main>
+        <div class="row title">
+            <em>辩论题目</em>
+            <input type="text" placeholder="请填写辩论题目"/>
+        </div>
+        <div class="row category">
+            <em>请选择辩论分类</em>
+            <input type="text" placeholder="请选择论题分类"/>
+        </div>
+        <textarea placeholder="描述一下您辩论的话题内容..."></textarea>
+        <div class="upload">
+            <img src="../../img/pub_03.jpg" alt=""/>
+        </div>
+        <div class="row payMoney" >
+            <em>知识付费</em>
+            <input type="number" placeholder="请输入付费金额"/>
+            <i class="mui-icon mui-icon-forward"></i>
+        </div>
+    </main>
+    <div id="mask"></div>
+    <div id="show">
+        <ul>
+            <li class="row " data-money="0">
+                <em>免费贡献</em>
+                <i class="iconfont icon-radio"></i>
+            </li>
+            <li data-money="1">
+                <p data-content="￥">知识付费</p>
+                <input type="number"/>
+                <div>
+                    <span class="quit">取消</span>
+                    <span class="sure">确定</span>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div id="catshow">
+        <ul>
+            <li data-catindex='0' data-cat="是非辩题"            class="active">是非辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='1' data-cat="比较辩题">比较辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='2' data-cat="可否辩题">可否辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='3' data-cat="可能辩题">可能辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='4' data-cat="前提辩题">前提辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='5' data-cat="先后辩题">先后辩题 <em class="iconfont icon-radio"></em></li>
+            <li data-catindex='6' data-cat="轻重辩题">轻重辩题 <em class="iconfont icon-radio"></em></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+       $(function () {
+           $(".payMoney").click(function () {
+               $("#show").show();
+               $("#mask").show();
+           })
+           $("#show .quit").click(function () {
+               $("#show").hide();
+               $("#mask").hide();
+           })
+           $("#show .sure").click(function () {
+               $("#show").hide();
+               $("#mask").hide();
+           })
+           $(".category").click(function () {
+               $("#catshow").show();
+               $("#mask").show();
+           })
+           $("#catshow li").click(function () {
+               $(this).addClass("active").siblings().removeClass("active");
+               $(".category>input").val($(this).data("cat"));
+               $("#catshow").hide();
+               $("#mask").hide();
+           })
+
+       })
+</script>
+</html>

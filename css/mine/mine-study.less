@@ -1,0 +1,72 @@
+@import "../common";
+.li-index{
+  border:1px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: .2rem;
+  box-shadow: 0 0 0 1px #eee;
+
+}
+.layer{
+  >main{
+    .mui-table-view{
+      .mui-slider-handle{
+        height: 1.7rem;
+        &.my_publish{
+          height:2rem;
+          >a{
+            >img{
+              width: 35%;
+              height:2rem;
+            }
+            >.hot-right{
+              width: 60%;
+              padding-left: 5%;
+              >h4{
+                font-size: .34rem;
+                color: #666;
+                height: .5rem;
+                .line(1);
+              }
+              >p{
+                .line(2);
+                font-size: .24rem;
+                color:#333;
+              }
+              >del{
+                display: block;
+                text-align: right;
+                font-size: .7rem;
+                color:@baseColor;
+              }
+            }
+          }
+        }
+
+        >img{
+          width: 30%;
+        }
+        >.mui_right{
+          padding-left: 5%;
+
+          >h4{
+            font-size: .34rem;
+            color:#333;
+            line-height: .5rem;
+            .line(1);
+          }
+          >p{
+            .line(2);
+            font-size: .24rem;
+          }
+          >del{
+            font-size: .24rem;
+            margin-top: 3%;
+            color:@baseColor;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>我的学习</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/mine/mine-study.css"/>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">我的学习</h1>
+       </header>
+    <main>
+        <ul id="OA_task_1" class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red">删除</a>
+                </div>
+                <div class="mui-slider-handle row">
+                    <img src="../../img/music.jpg" alt=""/>
+                    <div class="mui_right">
+                            <h4>做好事是否应该留名</h4>
+                             <p>做好事不留名，其目的是为了无私的 帮助别人，奉献爱心做好事不留名，其目的是为了无私的 帮助别人，奉献爱心...</p>
+                            <del>已购买</del>
+                    </div>
+                </div>
+            </li>
+            <li class="mui-table-view-cell">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red">删除</a>
+                </div>
+                <div class="mui-slider-handle row">
+                    <img src="../../img/music.jpg" alt=""/>
+                    <div class="mui_right">
+                            <h4>做好事是否应该留名</h4>
+                             <p>做好事不留名，其目的是为了无私的 帮助别人，奉献爱心做好事不留名，其目的是为了无私的 帮助别人，奉献爱心...</p>
+                            <del>已购买</del>
+                    </div>
+                </div>
+            </li>
+            <li class="mui-table-view-cell">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red">删除</a>
+                </div>
+                <div class="mui-slider-handle row">
+                    <img src="../../img/music.jpg" alt=""/>
+                    <div class="mui_right">
+                            <h4>做好事是否应该留名</h4>
+                             <p>做好事不留名，其目的是为了无私的 帮助别人，奉献爱心做好事不留名，其目的是为了无私的 帮助别人，奉献爱心...</p>
+                            <del>已购买</del>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+
+        mui.init();
+        (function($) {
+            $('#OA_task_1').on('tap', '.mui-btn', function(event) {
+                var elem = this;
+                var li = elem.parentNode.parentNode;
+                mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function(e) {
+                    if (e.index == 0) {
+                        li.parentNode.removeChild(li);
+                    } else {
+                        setTimeout(function() {
+                            $.swipeoutClose(li);
+                        }, 0);
+                    }
+                });
+            });
+            var btnArray = ['确认', '取消'];
+        })(mui);
+
+    })
+</script>
+</html>

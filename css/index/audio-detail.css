@@ -1,0 +1,188 @@
+/*�������*/
+/*������ɫ*/
+.layer > main {
+  margin-top: 1.4rem;
+}
+.layer > main > .title {
+  background-color: #fff;
+  padding: 0 0.3rem;
+  border-bottom: 1px solid #eee;
+}
+.layer > main > .title > h4 {
+  padding-top: 0.2rem;
+  font-size: 0.34rem;
+}
+.layer > main > .title > p {
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  color: #666;
+}
+.layer > main > .title > p > img {
+  width: 0.6rem;
+  height: 0.6rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+.layer > main > .title > p > s {
+  margin-left: 15%;
+}
+.layer > main > .imgs {
+  background-color: #fff;
+  padding: 0 0.3rem;
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  padding-top: 0.2rem;
+}
+.layer > main > .imgs > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.layer > main > .audio-message {
+  background-color: #fff;
+  padding: 0 0.3rem;
+  position: relative;
+  width: 100%;
+  height: 1.5rem;
+  padding-top: 0.2rem;
+}
+.layer > main > .audio-message > audio {
+  position: absolute;
+  width: 100%;
+  height: 1.5rem;
+  opacity: 0;
+  z-index: 2;
+  background-color: pink;
+}
+.layer > main > .audio-message > .bg-music {
+  width: 25%;
+  height: 100%;
+  background-color: #30aafa;
+}
+.layer > main > .audio-message > .bg-music > em {
+  height: 100%;
+  line-height: 165%;
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.layer > main > .audio-message > .audio-right {
+  padding-left: 5%;
+  width: 70%;
+}
+.layer > main > .audio-message > .audio-right > h4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 0.3rem;
+  color: #333;
+}
+.layer > main > .audio-message > .audio-right > em {
+  font-size: 0.24rem;
+  color: #30aafa;
+}
+.layer > main > .audio-message > .audio-right > p {
+  font-size: 0.8rem;
+  color: #30aafa;
+  text-align: right;
+}
+.layer > main > article {
+  background-color: #fff;
+  padding: 0.5rem 0.3rem;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+  color: #666;
+}
+.layer > main > .leave {
+  padding: 0.3rem;
+  padding-bottom: 1rem;
+}
+.layer > main > .leave > .p {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  color: #1e1875;
+}
+.layer > main > .leave > .p > em {
+  color: #333;
+}
+.layer > main > .leave > .leave-message {
+  margin-top: 0.3rem;
+}
+.layer > main > .leave > .leave-message > .message-list > .father-leave > .father-top > img {
+  vertical-align: middle;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.layer > main > .leave > .leave-message > .message-list > .father-leave > article {
+  color: #666;
+  font-size: 0.28rem;
+  margin-left: 1rem;
+}
+.layer > main > .leave > .leave-message > .message-list > .response-leave,
+.layer > main > .leave > .leave-message > .message-list > .response-leave-son {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+}
+.layer > main > .leave > .leave-message > .message-list > .response-leave > .response-top,
+.layer > main > .leave > .leave-message > .message-list > .response-leave-son > .response-top {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  position: relative;
+  color: #666;
+}
+.layer > main > .leave > .leave-message > .message-list > .response-leave > .response-top > s,
+.layer > main > .leave > .leave-message > .message-list > .response-leave-son > .response-top > s {
+  padding-left: 0.2rem;
+}
+.layer > main > .leave > .leave-message > .message-list > .response-leave > .response-top:before,
+.layer > main > .leave > .leave-message > .message-list > .response-leave-son > .response-top:before {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: 3px;
+  left: 0;
+  top: 10%;
+  background-color: #30aafa;
+}
+.layer > main > .leave > .leave-message > .message-list > .response-leave > article,
+.layer > main > .leave > .leave-message > .message-list > .response-leave-son > article {
+  color: #666;
+}
+.layer > main > .inputs-leave {
+  display: none;
+  padding-left: 3%;
+  width: 100%;
+  background-color: #eee;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  height: 1rem;
+  line-height: 1rem;
+}
+.layer > main > .inputs-leave > input {
+  margin-top: 0.2rem;
+  width: 80%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px ;
+  border-radius: 20px;
+  background-color: #eee;
+}
+.layer > main > .inputs-leave > em {
+  width: 20%;
+  text-align: center;
+}

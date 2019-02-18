@@ -1,0 +1,189 @@
+@import "../common";
+.layer{
+  
+  >main{
+    margin-top: 1.4rem;
+
+    >.title{
+      background-color: #fff;
+      padding:0 .3rem;
+      border-bottom: 1px solid #eee;
+      >h4{
+        padding-top: .2rem;
+        font-size: .34rem;
+      }
+      >p{
+        margin-top: .2rem;
+        font-size: .24rem;
+        color:#666;
+        >img{
+          width: .6rem;
+          height: .6rem;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-left: 3%;
+        }
+        >s{
+          margin-left: 15%;
+        }
+      }
+    }
+    >.imgs{
+      background-color: #fff;
+      padding:0 .3rem;
+      position: relative;
+      height: 3rem;
+      width: 100%;
+      padding-top: .2rem;
+      >img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+      }
+    }
+    >.audio-message{
+      background-color: #fff;
+      padding:0 .3rem;
+      position: relative;
+      width: 100%;
+      height: 1.5rem;
+      padding-top: .2rem;
+      >audio{
+        position: absolute;
+        width: 100%;
+        height: 1.5rem;
+        opacity: 0;
+        z-index: 2;
+        background-color: pink;
+      }
+      >.bg-music{
+        width: 25%;
+        height: 100%;
+        background-color: @baseColor;
+        >em{
+          height: 100%;
+          line-height: 165%;
+          display: block;
+          text-align: center;
+          font-size: .8rem;
+          color:#fff;
+        }
+      }
+      >.audio-right{
+        padding-left: 5%;
+        width: 70%;
+        >h4{
+          .line(1);
+          font-size: .3rem;
+          color:#333;
+        }
+        >em{
+          font-size: .24rem;
+          color:@baseColor;
+        }
+        >p{
+          font-size: .8rem;
+          color:@baseColor;
+          text-align: right;
+        }
+      }
+    }
+    >article{
+      background-color: #fff;
+      padding:.5rem .3rem;
+      line-height: .5rem;
+      font-size: .3rem;
+      color:#666;
+    }
+    >.leave{
+      padding: 0.3rem;
+      padding-bottom: 1rem;
+      >.p{
+        height: .6rem;
+        line-height: .6rem;
+        color:#1e1875;
+        >em{
+          color:#333;
+        }
+      }
+      >.leave-message{
+        margin-top: .3rem;
+        >.message-list{
+          >.father-leave{
+            >.father-top{
+              >img{
+                vertical-align: middle;
+                width: .8rem;
+                height: .8rem;
+                margin-right: .2rem;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+              }
+            }
+            >article{
+              color:#666;
+              font-size: .28rem;
+              margin-left: 1rem;
+            }
+          }
+          >.response-leave,>.response-leave-son{
+            margin-left: 1rem;
+            margin-top: .2rem;
+            >.response-top{
+              height: .6rem;
+              line-height: .6rem;
+              position: relative;
+              color:#666;
+              >s{
+                padding-left: .2rem;
+              }
+              &:before{
+                content:"";
+                position: absolute;
+                height: .4rem;
+                width: 3px;
+                left: 0;
+                top: 10%;
+                background-color: @baseColor;
+              }
+            }
+            >article{
+              color:#666;
+            }
+          }
+
+        }
+      }
+    }
+    >.inputs-leave{
+      display: none;
+      padding-left: 3%;
+      width: 100%;
+      background-color: #eee;
+      position: fixed;
+      z-index:2;
+      left: 0;
+      bottom: 0;
+      height: 1rem;
+      line-height: 1rem;
+      >input{
+        margin-top: .2rem;
+        width: 80%;
+        -webkit-border-radius:20px;
+        -moz-border-radius:20px ;
+        border-radius:20px;
+        background-color: #eee;
+      }
+      >em{
+        width: 20%;
+        text-align: center;
+      }
+    }
+  }
+}

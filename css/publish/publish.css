@@ -1,0 +1,126 @@
+/*�������*/
+/*������ɫ*/
+.layer > main {
+  margin-top: 1.6rem;
+  background-color: #fff;
+}
+.layer > main > .row {
+  height: 1rem;
+  line-height: 1rem;
+  padding: 0 0.3rem;
+}
+.layer > main > .row > em {
+  width: 60%;
+}
+.layer > main > .row > input {
+  margin-top: 0.1rem;
+  border: none;
+  line-height: 0.8rem;
+}
+.layer > main > .row > .mui-icon {
+  line-height: 1rem;
+  color: #666;
+}
+.layer > main > textarea {
+  height: 2.3rem;
+  border: none;
+  padding: 0.3rem;
+  border-top: 0.2rem solid #eee;
+}
+.layer > main > .upload {
+  margin-left: 0.3rem;
+}
+.layer > main > .upload > img {
+  width: 30%;
+}
+.layer #show {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  z-index: 13;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.layer #show > ul {
+  padding: 0.3rem 0.5rem;
+}
+.layer #show > ul > li {
+  position: relative;
+}
+.layer #show > ul > li:first-of-type {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.layer #show > ul > li > em {
+  font-size: 0.3rem;
+}
+.layer #show > ul > li > p {
+  font-size: 0.3rem;
+  color: #333;
+}
+.layer #show > ul > li > i {
+  width: 60%;
+  font-size: 0.5rem;
+  color: #666;
+  text-align: right;
+  vertical-align: middle;
+}
+.layer #show > ul > li:last-of-type :before {
+  content: attr(data-content);
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  z-index: 5;
+  width: 0.6rem;
+  height: 0.6rem;
+  font-size: 0.4rem;
+}
+.layer #show > ul > li > input {
+  border: none;
+  text-indent: 1em;
+}
+.layer #show > ul > li > div {
+  text-align: right;
+}
+.layer #show > ul > li > div > span {
+  width: 30%;
+}
+.layer #show > ul > li > div > span.sure {
+  color: #30aafa;
+}
+.layer #catshow {
+  display: none;
+  background-color: #fff;
+  width: 70%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 13;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.layer #catshow > ul {
+  padding: 0.3rem;
+}
+.layer #catshow > ul > li {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #666;
+  padding-left: 15%;
+}
+.layer #catshow > ul > li.active > em {
+  color: #30aafa;
+}
+.layer #catshow > ul > li > em {
+  font-size: 0.5rem;
+  vertical-align: middle;
+  color: #999;
+  margin-left: 25%;
+}

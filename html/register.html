@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>注册界面</title>
+    <link rel="stylesheet" href="../css/common/base.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+<div class="layer" style="overflow-x: hidden">
+    <div class="bg reg-bg">
+        <img src="../img/login-bg.png" alt=""/>
+        <div class="replay">
+            <a class="register active" href="./register.html">注册</a>
+            <a class="login " href="./login.html">登录</a>
+        </div>
+    </div>
+    <div class="login-inputs register-inputs">
+        <input type="number" placeholder="请输入手机号" class="phone"/>
+        <input type="number" placeholder="请输入验证码" class="code"/>
+        <em class="getCode">获取验证码</em>
+        <input type="password" placeholder="请输入密码" class="pwd"/>
+        <button class="submit">下一步</button>
+    </div>
+    <div class="third_login">
+        <span></span>
+        <i> 其他登录方式</i>
+        <span></span>
+    </div>
+    <div class="link">
+        <a href=""><img src="../img/qq.png" alt=""/></a>
+        <a href=""> <img src="../img/WeChat.png" alt=""/></a>
+        <a href=""><img src="../img/sina.png" alt=""/></a>
+    </div>
+</div>
+<script src="../js/common/base.js"></script>
+<script src="../js/common/x_rem.js"></script>
+<script src="../js/common/zepto/zepto.min.js"></script>
+<!--此处 退出APP-->
+</body>
+</html>

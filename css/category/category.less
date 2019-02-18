@@ -1,0 +1,116 @@
+@import "../common";
+.layer{
+  >#header{
+    padding-top: .3rem;
+    height: 1.3rem;
+    line-height: .8rem;
+   >em{
+     position: absolute;
+     right: 3%;
+     top: 20%;
+     width: .8rem;
+     height: .8rem;
+     background: url("../../img/search.png") no-repeat center;
+     -webkit-background-size: 100%;
+     background-size: 100%;
+    }
+  }
+  >.main{
+    padding-top: 1.3rem;
+    position: fixed;
+    width: 100%;
+
+    background-color: #f4f4f4;
+    top: 0;
+    padding-bottom: 1rem;
+    bottom: 1.3rem;
+    height: 100%;
+    >.left{
+      position:absolute;
+      left: 0;
+      top: 10%;
+      width: 30%;
+      padding-left: .2rem;
+      >ul{
+        width: 100%;
+        height: 100%;
+        >li{
+          text-align: center;
+          height: 1rem;
+          line-height: 1rem;
+          font-size: .3rem;
+          border-bottom: 1px solid #e5e5e5;
+          &.active{
+            border-bottom: 0;
+            position: relative;
+            background-color: #fff;
+            &:before{
+              height: 100%;
+              width: 5px;
+              position: absolute;
+              content:'';
+              left: -.2rem;
+              top: 0;
+              background-color: @baseColor;
+
+            }
+          }
+        }
+      }
+    }
+    >.right{
+      margin-left: 30%;
+      width: 70%;
+      height: 100%;
+      background-color: #fff;
+      overflow-y: auto;
+      >ul{
+        width: 95%;
+        height: auto;
+      >li{
+        padding:.3rem;
+        border-bottom: 1px solid #eee;
+        >a{
+          position: relative;
+          >img{
+            width: 35%;
+            height: 1.8rem;
+            vertical-align: middle;
+          }
+          >em{
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            z-index: 2;
+            left: 23%;
+            top: 74%;
+            font-size: .4rem;
+            color:#fff;
+            transform: translate(-50%,-50%);
+          }
+          >.ct_right{
+            padding-left: 5%;
+            padding-top: 5%;
+            >h3{
+              .line(1);
+              font-size: .34rem;
+              color:#333;
+            }
+            >p{
+              .line(1);
+              font-size: .26rem;
+
+            }
+            >span{
+              font-size: .24rem;
+              >s{
+                color:#f01414;
+              }
+            }
+          }
+        }
+      }
+      }
+    }
+  }
+}

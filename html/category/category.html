@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>分类</title>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/category/category.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">全部分类</h1>
+        <em onclick="location.href='../index/search.html'"></em>
+    </header>
+    <div class="main">
+        <div class="left">
+            <!--分类辩题 是非辩题  比较 可否 可能 前提 先后 轻重-->
+            <ul>
+                <li data-type="0" class="active">是非辩题</li>
+                <li data-type="1">比较辩题</li>
+                <li data-type="2">可否辩题</li>
+                <li data-type="3">可能辩题</li>
+                <li data-type="4">前提辩题</li>
+                <li data-type="5">先后辩题</li>
+                <li data-type="6">轻重辩题</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="../index/audio-detail.html" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <em class="iconfont icon-bofang1"></em>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index/audio-detail.html" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="ct_right">
+                            <h3>#网络利与弊#</h3>
+                            <p>现在时代，信息正在以前所未拷贝... </p>
+                            <span><s>1205</s> 围观</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+<div id="footer"></div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+        mui('body').on('tap','a',function(){document.location.href=this.href;});
+        $('#footer').load('../common/footer.html');
+        setTimeout(function () {
+            $("#footer .mui-tab-item:nth-of-type(2)").addClass(".mui-active").children("em").removeClass("icon-leimupinleifenleileibie").addClass("icon-icon_category")
+        },300)
+
+        mui.init({
+            swipeBack: true //启用右滑关闭功能
+        });
+        $(".left li").click(function () {
+            var type=$(this).data("type");
+            console.log(type);
+            $(this).addClass("active").siblings("li").removeClass("active");
+        })
+    })
+</script>
+</html>

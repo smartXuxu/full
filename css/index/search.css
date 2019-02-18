@@ -1,0 +1,18 @@
+.main {
+  background-color: #fff;
+}
+.main > .search-content {
+  padding: 0.5rem;
+}
+.main > .search-content > span {
+  width: 40%;
+  text-align: center;
+  margin-right: 8%;
+  font-size: 0.3rem;
+  margin-bottom: 5%;
+  background-color: #eeeeee;
+  padding: 0.1rem 0.2rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}

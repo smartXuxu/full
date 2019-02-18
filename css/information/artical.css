@@ -1,0 +1,27 @@
+.layer > main {
+  background-color: #fff;
+  margin-top: 1.4rem;
+  padding: 0.3rem;
+}
+.layer > main > .artical-title > h3 {
+  font-size: 0.34rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+.layer > main > .artical-title > .artical-bottom {
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.layer > main > .artical-title > .artical-bottom > em {
+  font-size: 0.26rem;
+  color: #666;
+  margin-right: 5%;
+}
+.layer > main > img {
+  width: 100%;
+}
+.layer > main > aside {
+  margin-bottom: 0.2em;
+  line-height: 0.5rem;
+  font-size: 0.3rem;
+}

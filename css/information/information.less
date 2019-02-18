@@ -1,0 +1,103 @@
+@import "../common";
+.layer{
+  >.header{
+    height: 1.3rem;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    border-top: 0.3rem solid @baseColor;
+    ul{
+      >li{
+        width: 50%;
+        text-align: center;
+        line-height: 1rem;
+        &.active{
+        color: @baseColor;
+          position: relative;
+          &:after{
+            width: 30%;
+            height: 2px;
+            background-color: @baseColor;
+            content:"";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+  >.content{
+    background-color: #fff;
+      >.today-news{
+        padding-top: .2rem;
+        >div{
+          padding:0 .3rem;
+
+          >article{
+            .line(1);
+            height: .8rem;
+            line-height: .8rem;
+            font-size: .32rem;
+          } &.imgs-1{
+              img{
+                width: 100%;
+              }
+            }
+          &.imgs-3{
+            img{
+              width: 32%;
+            }
+          }
+          .img-boxs{
+            >img{
+              height: 2rem;
+            }
+
+          }
+          >p{
+            height: .6rem;
+            line-height: .6rem;
+            font-size: .28rem;
+            color:#666;
+          }
+        }
+      }
+    >.study{
+      display: none;
+      padding-top: .3rem;
+      >.learn-list{
+        padding:.2rem .3rem;
+
+        border-bottom: 1px solid #eee;
+        >.list-l{
+          width: 65%;
+          >p{
+            .line(2);
+            font-size: .32rem;
+            color:#333;
+          }
+          >.f-list{
+            height: .6rem;
+            font-size: .28rem;
+            color:#666;
+            >em{
+              margin-left: 10%;
+            }
+          }
+        }
+        >.list-r{
+          position: relative;
+          margin-left: 3%;
+          width: 30%;
+        >img{
+          position: absolute;
+          top: 50%;
+          height: 100%;
+          transform:translateY(-50%);
+        }
+        }
+      }
+    }
+  }
+}

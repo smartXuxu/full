@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>音频详情页</title>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/index/audio-detail.css"/>
+</head>
+<body>
+<div class="layer" style="overflow-x: hidden">
+    <header class="mui-bar mui-bar-nav second-header" >
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">详情</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h4>自律和他律哪个更有效果</h4>
+            <p>
+                <img src="../../img/focus-img1.png" alt=""/>
+                <em>阳光正好</em>
+                <s>2018-10-16</s>
+            </p>
+        </div>
+        <div class="imgs">
+            <img src="../../img/focus-img1.png" alt=""/>
+        </div>
+        <div class="audio-message row">
+            <audio src="../../img/kris.mp3" controls></audio>
+            <div class="bg-music">
+                <em class="iconfont icon-qqyinyuemusic1193404easyiconnet"></em>
+            </div>
+            <div class="audio-right">
+                <h4>自律和他律哪个更有效果</h4>
+                <em>纯享高音质</em>
+                <p class="iconfont icon-bofang"></p>
+            </div>
+        </div>
+        <article>
+            自律在他律的基础，上诞生，也就是说先有他律后有自律的，自律必须由他律建立，离开他律自律只能是无律。人最初并无自律意识，在成长过程中受他律约束，才建起自己的内心准则。自律是后天教育的结果，是对他律的认同与他律的内化。轻视他律，又何言自律?他律的约束是稳定、长期的。自律则不能，它对人行为的控制是薄弱、有限度的。自律依据的内心准则的权威性必须通过他律来确
+            立，权威性消失，又如何使自律得到最大限度的
+        </article>
+        <div class="leave">
+            <div class="p clearfix">
+                <em class="f_left">
+                    留言
+                </em>
+                <s class="f_right write-leave">
+                    <!--点击写留言的时候 会出现文本输入框-->
+                    写留言
+                </s>
+            </div>
+            <div class="leave-message">
+                <div class="message-list">
+                    <div class="father-leave">
+                        <div class="father-top">
+                            <img src="../../img/focus-img1.png" alt=""/>
+                            <i>小黄</i>
+                        </div>
+                        <article>
+                            我是第一个评论的，父级元素
+                            自律在他律的基础上诞生，也就是说现有他律后有自律，自律必须有他律建立，离开他律自律只能是无律，人最初在无意识的自律意识里面，在成长的过长中收到各种牵绊，牵绊也只能是无虑的，无虑的认证就是真的好的吗，人生来就是苦的，人可以选择各种各样的生活，但是却难免受到牵绊。
+                        </article>
+                    </div>
+                    <div class="response-leave">
+                        <div class="response-top">
+                            <s>小黄黄</s>
+                        </div>
+                        <article>
+                            我是评论的小黄
+                        </article>
+                    </div>
+                    <div class="response-leave-son">
+                            <div class="response-top">
+                               <s> 小黄黄黄</s>
+                            </div>
+                        <article>
+                            我回复的是小黄黄
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="inputs-leave row">
+            <input type="text" placeholder="请留下您的留言吧"/>
+            <em>完成</em>
+        </div>
+    </main>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+
+    $(function () {
+        var s="213234";
+        var id=localStorage.setItem("res"+s,s);
+        console.log(localStorage.getItem("res" + s));
+        var flag=true;
+        $(".write-leave").click(function () {
+            if(flag){
+                $(".inputs-leave").show();
+                flag=false;
+            }else{
+                $(".inputs-leave").hide();
+                flag=true;
+            }
+        })
+    })
+</script>
+</html>

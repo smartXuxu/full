@@ -1,0 +1,78 @@
+/*�������*/
+/*������ɫ*/
+.li-index {
+  border: 1px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.2rem;
+  box-shadow: 0 0 0 1px #eee;
+}
+.layer > main .mui-table-view .mui-slider-handle {
+  height: 1.7rem;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish {
+  height: 2rem;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish > a > img {
+  width: 35%;
+  height: 2rem;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish > a > .hot-right {
+  width: 60%;
+  padding-left: 5%;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish > a > .hot-right > h4 {
+  font-size: 0.34rem;
+  color: #666;
+  height: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish > a > .hot-right > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 0.24rem;
+  color: #333;
+}
+.layer > main .mui-table-view .mui-slider-handle.my_publish > a > .hot-right > del {
+  display: block;
+  text-align: right;
+  font-size: 0.7rem;
+  color: #30aafa;
+}
+.layer > main .mui-table-view .mui-slider-handle > img {
+  width: 30%;
+}
+.layer > main .mui-table-view .mui-slider-handle > .mui_right {
+  padding-left: 5%;
+}
+.layer > main .mui-table-view .mui-slider-handle > .mui_right > h4 {
+  font-size: 0.34rem;
+  color: #333;
+  line-height: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.layer > main .mui-table-view .mui-slider-handle > .mui_right > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 0.24rem;
+}
+.layer > main .mui-table-view .mui-slider-handle > .mui_right > del {
+  font-size: 0.24rem;
+  margin-top: 3%;
+  color: #30aafa;
+}

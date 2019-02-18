@@ -1,0 +1,221 @@
+@import "../common";
+.h5{
+  height: .8rem;
+  line-height: .8rem;
+  width: 100%;
+  font-size: .32rem;
+  padding-left: .3rem;
+  color:#333;
+}
+.h5-a{
+  margin-right: .3rem;
+  font-size: .24rem;
+  color:#007aff;
+}
+.li-index{
+  border:1px solid #eee;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: .2rem .3rem;
+  padding: .2rem;
+  box-shadow: 0 0 0 1px #eee;
+
+}
+.layer{
+  background-color: #fff;
+  .mui-card-header{
+    padding-bottom: 0;
+  }
+  >.header {
+    height: 1.6rem;
+    line-height: 1.4rem;
+    padding-top: .3rem;
+    padding-left: .3rem;
+    position: fixed;
+    z-index:5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    >em{
+      width: 16%;
+      font-size: .4rem;
+      text-align: center;
+      display: inline-block;
+      color:#afadb9;
+    }
+    &:before{
+      position: absolute;
+      left: 8%;
+      top: 44%;
+      content: '';
+      height: .6rem;
+      width: .6rem;
+      background:url("../../img/search.png")no-repeat center;
+      -webkit-background-size: 115%;
+      background-size: 115%;
+
+    }
+    input[type=text]{
+      text-indent: 2em;
+      padding:0 15px;
+      height: .7rem;
+      width: 82%;
+      font-size: .3rem;
+      border: 0;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #eeeeee;
+    }
+  }
+  >.content{
+    padding-top: 1.6rem;
+    #slider{
+      >.swiper-wrapper{
+        width: 100%;
+        height: 3.6rem;
+        >.swiper-slide{
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+    }
+    >.today-topic{
+      background-color: #eeeeee;
+      >h5{
+        .h5;
+      }
+      >.swiper-topic{
+        height: 2.4rem;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: .3rem;
+        >ul{
+          width: 200%;
+          height: 100%;
+          >li{
+            padding:0 .2rem;
+            margin-left:.2rem;
+            width: 4rem;
+            height: 100%;
+            vertical-align: middle;
+            background-color: #fff;
+            display: inline-block;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            >.topic-li-top{
+              height: .6rem;
+              margin-top: .2rem;
+              >.f_left{
+                >i{
+                  font-size: .24rem;
+                }
+              }
+              >.f_right{
+                color:#0099fe;
+                font-size: .2rem;
+              }
+            }
+            >p{
+              .line(2);
+              font-size: .28rem;
+              color:#333;
+            }
+          }
+        }
+      }
+    }
+    >.hot-audio{
+
+      >h5{
+      .h5;
+        > a {
+          .h5-a
+        }
+      }
+      >ul{
+        >li{
+          .li-index;
+        >a{
+           >img{
+             width: 35%;
+             height:2.3rem;
+           }
+           >.hot-right{
+             width: 60%;
+             padding-left: 5%;
+             >h4{
+               font-size: .3rem;
+               color: #666;
+               .line(1)
+             }
+             >p{
+               .line(2);
+               font-size: .24rem;
+               color:#333;
+             }
+             >del{
+               padding-top: .2rem;
+               display: block;
+               text-align: right;
+               font-size: .7rem;
+               color:@baseColor;
+             }
+           }
+         }
+        }
+      }
+    }
+    >.excent-lesson{
+      padding-bottom: 1rem;
+      >h5{
+        .h5;
+        >a{
+          .h5-a;
+        }
+      }
+       >ul{
+         >li{
+           .li-index;
+           a{
+             >img{
+               width: 40%;
+               height:2rem;
+               vertical-align: middle;
+             }
+             >.hot-right{
+               width: 60%;
+
+               padding-left: 5%;
+               >h4{
+                 color:#333;
+                 font-size: .3rem;
+                 .line(1)
+               }
+               >p{
+                 .line(2);
+                 font-size: .24rem;
+                 color:#333;
+               }
+               >.excent-footer{
+                 color:#666;
+                 font-size: .26rem;
+                 >em{
+                  color:@baseColor;
+                 }
+               }
+             }
+           }
+         }
+       }
+    }
+  }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 0;
+}

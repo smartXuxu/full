@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>我发布的</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/mine/mine-study.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">我发布的</h1>
+    </header>
+    <main>
+        <ul id="OA_task_1" class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red">删除</a>
+                </div>
+                <div class="mui-slider-handle my_publish">
+                        <a href="../index/audio-detail.html" class="row">
+                            <img src="../../img/focus-img1.png" alt="">
+                            <div class="hot-right">
+                                <h4>自律和他律哪个更有效果</h4>
+                                <p>时代在更新，社会在变化，两千多年 前孔夫子的千人教代在更新，社会在变化，两千多年 前孔夫子的千人教学</p>
+                                <del class="iconfont icon-bofang"></del>
+                            </div>
+                        </a>
+                </div>
+            </li>
+            <li class="mui-table-view-cell">
+                <div class="mui-slider-right mui-disabled">
+                    <a class="mui-btn mui-btn-red">删除</a>
+                </div>
+                <div class="mui-slider-handle my_publish">
+                        <a href="../index/audio-detail.html" class="row">
+                            <img src="../../img/focus-img1.png" alt="">
+                            <div class="hot-right">
+                                <h4>自律和他律哪个更有效果</h4>
+                                <p>时代在更新，社会在变化，两千多年 前孔夫子的千人教代在更新，社会在变化，两千多年 前孔夫子的千人教学</p>
+                                <del class="iconfont icon-bofang"></del>
+                            </div>
+                        </a>
+                </div>
+            </li>
+        </ul>
+
+    </main>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+
+        mui.init();
+        (function($) {
+            $('#OA_task_1').on('tap', '.mui-btn', function(event) {
+                var elem = this;
+                var li = elem.parentNode.parentNode;
+                mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function(e) {
+                    if (e.index == 0) {
+                        li.parentNode.removeChild(li);
+                    } else {
+                        setTimeout(function() {
+                            $.swipeoutClose(li);
+                        }, 0);
+                    }
+                });
+            });
+            var btnArray = ['确认', '取消'];
+        })(mui);
+
+    })
+</script>
+</html>

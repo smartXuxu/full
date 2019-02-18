@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>资讯</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link  rel="stylesheet" href="../../css/common/base.css"/>
+    <link  rel="stylesheet" href="../../css/information/information.css"/>
+
+</head>
+<body>
+<!---->
+<div class="layer"style="overflow-x: hidden">
+    <div class="header">
+        <ul class="row">
+            <li class="active" data-index="0">每日更新</li>
+            <li data-index="1">学&nbsp;&nbsp;&nbsp;&nbsp;习</li>
+        </ul>
+    </div>
+    <div class="content">
+            <div class="today-news">
+                <!--这样吧 图片设置为 1和3 排版设置-->
+                <div class="imgs-1" onclick="location.href='./artical.html'">
+                    <article>如何做好辩论赛中的一辩-百度经验</article>
+                    <div class="img-boxs">
+                        <img src="../../img/music.jpg" alt=""/>
+                    </div>
+
+                    <p class="clearfix">郑州信息科技大学
+                        <span>373阅读</span>
+                        <em class="f_right">47分钟前</em>
+                    </p>
+                </div>
+                <div class="imgs-3"  onclick="location.href='./artical.html'">
+                    <article>如何做好辩论赛中的一辩-百度经验</article>
+                  <div class="img-boxs">
+                      <img src="../../img/music.jpg" alt=""/>
+                      <img src="../../img/music.jpg" alt=""/>
+                      <img src="../../img/music.jpg" alt=""/>
+                  </div>
+                    <p>郑州信息科技大学
+                        <span>373阅读</span>
+                        <em class="f_right">47分钟前</em>
+                    </p>
+                </div>
+                <div class="imgs-3">
+                    <article>如何做好辩论赛中的一辩-百度经验</article>
+                  <div class="img-boxs">
+                      <img src="../../img/music.jpg" alt=""/>
+                      <img src="../../img/music.jpg" alt=""/>
+                      <img src="../../img/music.jpg" alt=""/>
+                  </div>
+                    <p>郑州信息科技大学
+                        <span>373阅读</span>
+                    </p>
+                </div>
+            </div>
+            <div class="study">
+                <div class="learn-list row"  onclick="location.href='./artical.html'">
+                   <div class="list-l">
+                       <p>辩论兴趣的培养比知识的知识的传授 更重要比知识的知识的传授 更重要</p>
+                       <div class="f-list">
+                           浙江大学    <em>373阅读</em>
+                       </div>
+                   </div>
+                    <div class="list-r">
+                        <img src="../../img/music.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="learn-list row"  onclick="location.href='./artical.html'">
+                   <div class="list-l">
+                       <p>辩论兴趣的培养比知识的知识的传授 更重要比知识的知识的传授 更重要</p>
+                       <div class="f-list">
+                           浙江大学    <em>373阅读</em>
+                       </div>
+                   </div>
+                    <div class="list-r">
+                        <img src="../../img/music.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+        mui('body').on('tap','a',function(){document.location.href=this.href;});
+        $('#footer').load('../common/footer.html');
+        setTimeout(function () {
+            $("#footer .mui-tab-item:nth-of-type(4)").addClass(".mui-active").children("em").removeClass("icon-xinwenzixun1").addClass("icon-xinwenzixun")
+        },300);
+        $(".header li").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            var index=$(this).data("index");
+            $(".content>div").eq(index).show().siblings().hide();
+        })
+
+    })
+
+</script>
+</html>

@@ -1,0 +1,100 @@
+/*�������*/
+/*������ɫ*/
+.layer > .header {
+  height: 1.3rem;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  border-top: 0.3rem solid #30aafa;
+}
+.layer > .header ul > li {
+  width: 50%;
+  text-align: center;
+  line-height: 1rem;
+}
+.layer > .header ul > li.active {
+  color: #30aafa;
+  position: relative;
+}
+.layer > .header ul > li.active:after {
+  width: 30%;
+  height: 2px;
+  background-color: #30aafa;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.layer > .content {
+  background-color: #fff;
+}
+.layer > .content > .today-news {
+  padding-top: 0.2rem;
+}
+.layer > .content > .today-news > div {
+  padding: 0 0.3rem;
+}
+.layer > .content > .today-news > div > article {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.32rem;
+}
+.layer > .content > .today-news > div.imgs-1 img {
+  width: 100%;
+}
+.layer > .content > .today-news > div.imgs-3 img {
+  width: 32%;
+}
+.layer > .content > .today-news > div .img-boxs > img {
+  height: 2rem;
+}
+.layer > .content > .today-news > div > p {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.28rem;
+  color: #666;
+}
+.layer > .content > .study {
+  display: none;
+  padding-top: 0.3rem;
+}
+.layer > .content > .study > .learn-list {
+  padding: 0.2rem 0.3rem;
+  border-bottom: 1px solid #eee;
+}
+.layer > .content > .study > .learn-list > .list-l {
+  width: 65%;
+}
+.layer > .content > .study > .learn-list > .list-l > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 0.32rem;
+  color: #333;
+}
+.layer > .content > .study > .learn-list > .list-l > .f-list {
+  height: 0.6rem;
+  font-size: 0.28rem;
+  color: #666;
+}
+.layer > .content > .study > .learn-list > .list-l > .f-list > em {
+  margin-left: 10%;
+}
+.layer > .content > .study > .learn-list > .list-r {
+  position: relative;
+  margin-left: 3%;
+  width: 30%;
+}
+.layer > .content > .study > .learn-list > .list-r > img {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+}

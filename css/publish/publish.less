@@ -1,0 +1,132 @@
+@import "../common";
+.layer{
+  >main{
+    margin-top: 1.6rem;
+    background-color: #fff;
+    >.row{
+      height: 1rem;
+      line-height: 1rem;
+      padding:0 .3rem;
+      >em{
+        width: 60%;
+      }
+      >input{
+        margin-top: .1rem;
+        border:none;
+        line-height:.8rem;
+      }
+      >.mui-icon{
+        line-height: 1rem;
+        color:#666;
+      }
+    }
+    >textarea{
+      height: 2.3rem;
+      border:none;
+      padding:.3rem;
+      border-top: .2rem solid #eee;
+    }
+    >.upload{
+      margin-left: .3rem;
+      >img{
+        width: 30%;
+      }
+    }
+  }
+//
+  #show{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    z-index: 13;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    >ul{
+      padding:.3rem .5rem;
+      >li{
+        &:first-of-type{
+          height: .6rem;
+          line-height: .6rem;
+        }
+        position: relative;
+        >em{
+          font-size: .3rem;
+        }
+        >p{
+          font-size: .3rem;
+          color:#333;
+        }
+        >i{
+          width: 60%;
+          font-size: .5rem;
+          color:#666;
+          text-align: right;
+          vertical-align: middle;
+        }
+        &:last-of-type{
+          :before{
+            content:attr(data-content);
+            position: absolute;
+            left: 0%;
+            top: 40%;
+            z-index: 5;
+            width: .6rem;
+            height: .6rem;
+            font-size: .4rem;
+          }
+        }
+        >input{
+          border:none;
+          text-indent: 1em;
+        }
+        >div{
+          text-align: right;
+          >span{
+            width: 30%;
+          &.sure{
+            color: @baseColor;
+          }
+          }
+        }
+      }
+    }
+  }
+  #catshow{
+    display: none;
+    background-color: #fff;
+    width: 70%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index:13;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    >ul{
+      padding: .3rem;
+      >li{
+        height: .8rem;
+        line-height: .8rem;
+        color:#666;
+        padding-left: 15%;
+        &.active{
+          >em{
+            color: @baseColor;
+          }
+        }
+        >em{
+          font-size: .5rem;
+          vertical-align: middle;
+          color:#999;
+          margin-left: 25%;
+        }
+      }
+    }
+  }
+}

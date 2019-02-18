@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>我的钱包</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/iconfont.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    
+    <style>
+        html{
+            background-color: #eee;
+        }
+        #header{
+            background-color: #30aafa;
+        }
+        #header h1,.mui-bar .mui-btn-link,#header a{
+            color:#fff;
+        }
+        .mui-bar-nav{
+            -webkit-box-shadow:none;
+             box-shadow:none;
+        }
+        .main{
+            background-color: #fff;
+            padding-top: 1.2rem;
+        }
+        .main>p{
+            color:#FFF;
+            background-color:#30aafa;
+            height: 3rem;
+        }
+        .main>p>span{
+            display: block;
+            text-align: center;
+            padding-top: .5rem;
+        }
+       /* .main>p>span:first-of-type{
+            padding-top: 0.5rem;
+            font-size: .6rem;
+        }*/
+        .main>p>em{
+            display: block;
+            text-align: center;
+            font-size: 1rem;
+        }
+        .mui-table-view{
+            margin-top: .3rem;
+        }
+        .mui-table-view-cell:after,.mui-table-view:after,.mui-table-view:before{
+            height: 0;
+
+        }
+        .mui-table-view-cell{
+            padding: 8px 15px;
+            /*  height: .8rem;
+              line-height: .8rem;*/
+            margin-bottom: .2rem;
+
+        }
+        .mui-navigate-right{
+            margin: 0;
+            padding: 0;
+        }
+        .mui-table-view-cell>a:not(.mui-btn){
+         /*   border:1px solid #eee;*/
+            font-size: .3rem;
+            color:#666;
+            /*height: .8rem;
+            line-height: .8rem;*/
+            /*box-shadow: 0 1px 0 1px rgba(0,0,0,.1);
+            border-radius: 10px;*/
+        }
+        .mui-table-view-cell>a>em{
+            margin-right: .3rem;
+            font-size: .3rem;
+            vertical-align: middle;
+        }
+        .mui-table-view-cell>a>.icon-chongzhi{
+            color:#11aa62;
+            font-size: .5rem;
+        }
+        .mui-table-view-cell>a>.icon-chongzhi1{
+            color:#409fcf;
+            margin-right: .5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">账户管理</h1>
+        <button class="mui-btn  mui-btn-link mui-pull-right" onclick="location.href='./account-detail.html'">明细</button>
+    </header>
+    <div class="main">
+        <p>
+            <span>账户余额（元）</span>
+            <em>48.20</em>
+        </p>
+        <ul class="mui-table-view mine_center">
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right my_save" href="./recharge.html">
+                    <em class="iconfont icon-chongzhi"></em>
+                    充值
+                </a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a class="mui-navigate-right my_save" href="./withdraw.html">
+                    <em class="iconfont icon-chongzhi1"></em>
+                     提现
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/back.js"></script>
+<script>
+    $(function () {
+
+    })
+</script>
+</html>

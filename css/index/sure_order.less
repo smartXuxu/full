@@ -1,0 +1,75 @@
+@import "../common";
+html{
+  background-color: #eee;
+}
+main{
+
+  margin-top: 1.3rem;
+  >h3{
+    height: .8rem;
+    line-height: .6rem;
+    font-size: .3rem;
+    padding:0 .3rem;
+    background-color: #fff;
+    >i{
+      color:#fe6430;
+    }
+    border-bottom: .2rem solid #eee;
+  }
+  >p{
+    background-color: #fff;
+    height: 1rem;
+    line-height: 1rem;
+    padding:0 .3rem;
+    font-size: .34rem;
+    color:#333;
+  }
+  >div{
+    background-color: #fff;
+    padding:0 .3rem;
+    height: 1rem;
+    line-height: 1rem;
+    &.active{
+      del.iconfont{
+        color:#0eadf3;
+      }
+    }
+    &.air_pay{
+      i{
+        color:#0eadf3;
+      }
+    }
+    &.weChat{
+      i{
+        color:#42b035;
+      }
+    }
+    >s{
+      width: 40%;
+      font-size: .3rem;
+      >.iconfont{
+        font-size: .6rem;
+        margin-right: .3rem;
+        vertical-align: middle;
+      }
+    }
+    >del.iconfont{
+      width: 30%;
+      font-size: .6rem;
+      color:#999;
+      text-align: right;
+    }
+  }
+  >.sure{
+    display: block;
+    text-align: center;
+    margin:0 auto;
+    margin-top: .5rem;
+    height: .8rem;
+    line-height: .8rem;
+    background-color: @baseColor;
+    color:#fff;
+    font-size: .3rem;
+    width: 90%;
+  }
+}

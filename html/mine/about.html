@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>关于</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <style>
+        html{
+            background-color: #eeeeee;
+        }
+        .account_layer{
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo{
+            width: 100%;
+            margin-top: 1.5rem;
+        }
+        .logo span{
+            width: 1.6rem;
+            height: 1.6rem;
+            background-color:#30aafa;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform:translateX(-50%);
+            /*   position: absolute;
+               left: 50%;
+            */
+        }
+        .logo p{
+            text-align: center;
+            margin-top: 0.2rem;
+            font-size: 0.3rem;
+            color:#464646;
+        }
+        .info{
+            font-size: 0.3rem;
+            padding: 0.3rem 0.4rem 0 0.4rem;
+            color:#464646;
+        }
+    </style>
+</head>
+<body>
+<div class="account_layer"  style="overflow-x: hidden">
+    <header id="header" class="mui-bar mui-bar-nav second-header ">
+
+        <h1 class="mui-title">关于我们</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a></header>
+    <div class="logo clearfix">
+        <span></span>
+        <p>完整</p>
+    </div>
+    <p class="info">完整是一款关于网上辩论的app,在这里可以发散你的思维，并且可以发表你的观点，可以足不出户就可以来一场畅所欲言的辩论，加入我们</p>
+
+</div>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/back.js"></script>
+<script>
+    function back(){
+        history.go(-1);
+    }
+</script>
+</body>
+</html>

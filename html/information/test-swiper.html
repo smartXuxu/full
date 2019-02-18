@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>资讯</title>
+    <link  rel='stylesheet' href="../../css/common/mui/mui.min.css"/>
+    <link  rel='stylesheet' href="../../css/common/base.css"/>
+    <style>
+        /* 顶部导航 */
+        .top_nav{
+            display: block;
+            height:1.375rem;
+            line-height: 1.375rem;
+            font-size: 0.48rem;
+            width: 100%;
+            background: rgb(224, 224, 224);
+            margin-bottom: 0.3125rem;
+        }
+        .top_nav a{
+            text-decoration: none;
+        }
+
+        .top_nav span{
+            height: 100%;
+            line-height:  1.375rem;
+            text-align: center;
+        }
+
+        .class_box{
+            width: 100%;
+            padding: 0 0.3125rem;
+            background: #FFF;
+
+        }
+
+        .item{
+            width: 100%;
+            height: 2rem;
+            font-size: 0.4375rem;
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        .item:nth-child(even)>.index{
+            width: 10%;
+            height: 100%;
+            line-height: 2rem;
+            text-align: center;
+            background: blue;
+
+        }
+        .item:nth-child(odd)>.index{
+            width: 10%;
+            height: 100%;
+            line-height: 2rem;
+            text-align: center;
+            background: #fe5462;
+
+        }
+        .concent{
+            padding: 0.3rem;
+            width: 90%;
+            height: 100%;
+            line-height: 0.75rem;
+
+        }
+        .concent span{
+            font-size: 0.375rem;
+        }
+        .mui-slider .mui-slider-group .mui-slider-item{
+            height: 14rem;
+        }
+
+        /* 更改当前样式 */
+        .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+            color: #fff;
+            text-decoration: none;
+            border-bottom: none;
+            background:#fb8792;
+        }
+
+    </style>
+</head>
+<body>
+<!---->
+<div class="layer">
+    <div class="mui-content">
+
+
+        <div class="big_wrapper">
+            <div class="mui-slider">
+                <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="top_nav">
+
+                        <a class="mui-control-item mui-active" href="#item1">
+                            <span>视频</span>
+                        </a>
+                        <a class="mui-control-item" href="#item2">
+                            <span>笔记</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="mui-slider-group">
+                    <!-- 一 -->
+                    <div id="item1"  class="mui-slider-item mui-control-content mui-active" >
+
+                        <div class="mui-scroll-wrapper">
+                            <div class="mui-scroll">
+
+                                <div class="class_box" >
+                                    <div class="item">
+                                        <div class="index left">1</div>
+                                        <div class="concent right">
+                                            <div class="cl_name">课程课程课程课程课程课程课程</div>
+                                            <span>2018.10.3-15:30</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="index left">2</div>
+                                        <div class="concent right">
+                                            <div class="cl_name">课程课程课程课程课程课程课程</div>
+                                            <span>2018.10.3-15:30</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 二 -->
+                    <div  id="item2" class="mui-slider-item mui-control-content ">
+
+                        <div class="mui-scroll-content">
+                            <div class="mui-scroll">
+                                <div class="class_box" >
+                                    <div class="item">
+                                        <div class="index left">3</div>
+                                        <div class="concent right">
+                                            <div class="cl_name">课程课程课程课程课程课程课程</div>
+                                            <span>2018.10.3-15:30</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div class="index left">4</div>
+                                        <div class="concent right">
+                                            <div class="cl_name">课程课程课程课程课程课程课程</div>
+                                            <span>2018.10.3-15:30</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+        mui('body').on('tap','a',function(){document.location.href=this.href;});
+        $('#footer').load('../common/footer.html');
+        setTimeout(function () {
+            $("#footer .mui-tab-item:nth-of-type(4)").addClass(".mui-active").children("em").removeClass("icon-xinwenzixun1").addClass("icon-xinwenzixun")
+        },300)
+
+    })
+    mui.init();
+    (function($) {
+        $('.mui-scroll-content').scroll({
+            bounce: false,
+            indicators: true, //是否显示滚动条
+
+        });
+    })(mui);
+</script>
+</html>
