@@ -1,0 +1,76 @@
+/*�������*/
+/*������ɫ*/
+main {
+  background-color: #fff;
+}
+main > nav {
+  height: .8rem;
+  line-height: .8rem;
+}
+main > nav > span {
+  width: 50%;
+  font-size: .3rem;
+  text-align: center;
+}
+main > nav > span.active {
+  color: #30aafa;
+}
+main > section > .self_chat > li {
+  padding: .2rem .3rem;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  height: 1.2rem;
+}
+main > section > .self_chat > li > a > img {
+  width: .8rem;
+  height: .8rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 2%;
+}
+main > section > .self_chat > li > a > .chat_right {
+  width: 80%;
+}
+main > section > .self_chat > li > a > .chat_right > em {
+  display: block;
+  font-size: .36rem;
+}
+main > section > .self_chat > li > a > .chat_right > span {
+  font-size: .24rem;
+  color: #666;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+main > section > .self_chat > li > a > span {
+  padding-right: 3%;
+}
+main > section > .self_notice {
+  display: none;
+}
+main > section > .self_notice > li {
+  width: 100%;
+}
+main > section > .self_notice > li > a {
+  display: block;
+  width: 100%;
+  height: 1.3rem;
+  padding: .2rem .5rem;
+  border-bottom: 1px solid #eee;
+}
+main > section > .self_notice > li > a > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: .3rem;
+  color: #333;
+}
+main > section > .self_notice > li > a > span {
+  font-size: .24rem;
+  color: #666;
+}

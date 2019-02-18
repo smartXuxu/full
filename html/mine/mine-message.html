@@ -2,9 +2,64 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-</head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>消息中心</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/mine/mine_message.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+   </head>
 <body>
-
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">消息中心</h1>
+    </header>
+    <main>
+        <nav class="row">
+            <span class="active" data-index="0">私信</span>
+            <span data-index="1">通知</span>
+        </nav>
+        <section>
+            <ul class="self_chat">
+                <li>
+                    <a href="chat.html" class="row">
+                        <img src="../../img/focus-img1.png" alt=""/>
+                        <div class="chat_right">
+                            <em>半颜半心</em>
+                            <span>你好啊，你好啊</span>
+                        </div>
+                        <span>09:30</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="self_notice">
+                <li>
+                    <a href="message-detail.html">
+                        <p>欢迎来到完整</p>
+                        <span>2018-12-10</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
 </body>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/back.js"></script>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script>
+    $(function () {
+        $("main>nav>span").click(function () {
+            var index=$(this).data("index");
+            console.log(index);
+            $(this).addClass("active").siblings().removeClass("active");
+            $("section>ul").eq(index).show().siblings("ul").hide();
+
+        })
+    })
+</script>
 </html>

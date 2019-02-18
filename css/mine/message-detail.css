@@ -1,0 +1,24 @@
+html {
+  background-color: #eee;
+}
+main > .box {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+main > .box > p {
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.34rem;
+}
+main > .box > p > del {
+  padding-right: 0.3rem;
+}
+main > .box > span {
+  display: block;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.3rem;
+}

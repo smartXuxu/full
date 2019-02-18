@@ -1,0 +1,46 @@
+.layer > header {
+  height: 3rem;
+  width: 100%;
+  background: url("../../img/mine_index.jpg") no-repeat center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+.layer > header > a {
+  color: #fff;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+.layer > header > .header_content {
+  padding: 0.5rem;
+}
+.layer > header > .header_content > img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.layer > header > .header_content > em {
+  margin-left: 3%;
+  color: #fff;
+}
+.layer > header > .header_content > span {
+  border-radius: 20px;
+  background-color: #30aafa;
+  font-size: .3rem;
+  color: #fff;
+  width: 30%;
+  text-align: center;
+  height: .6rem;
+  line-height: .6rem;
+}
+.layer > .content {
+  padding-top: 0;
+  background-color: #fff;
+}
+.layer > .content > p {
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .36rem;
+  color: #333;
+  padding-left: .3rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>通知详情页面</title>
+    <link rel="stylesheet" href="../../css/common/mui/mui.min.css"/>
+    <link rel="stylesheet" href="../../css/common/base.css"/>
+    <link rel="stylesheet" href="../../css/second-header.css"/>
+    <link rel="stylesheet" href="../../css/mine/message-detail.css"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1041539_pcvd76hqsk.css"/>
+</head>
+<body>
+<div class="layer">
+    <header id="header" class="mui-bar mui-bar-nav second-header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">通知</h1>
+    </header>
+    <main>
+        <div class="box">
+            <p class="clearfix">2018-09-12
+                <del class="iconfont icon-chahao f_right "></del>
+            </p>
+            <span>欢迎来到完整!</span>
+        </div>
+
+        <div class="box">
+            <p class="clearfix">2018-09-12
+                <del class="iconfont icon-chahao f_right"></del>
+            </p>
+            <span>欢迎来到完整!</span>
+        </div>
+
+    </main>
+
+</div>
+<script src="../../js/common/mui/mui.min.js"></script>
+<script src="../../js/common/x_rem.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/zepto/zepto.min.js"></script>
+<script src="../../js/common/zepto/selector.js"></script>
+<script>
+    $(function () {
+        $(".iconfont.f_right").click(function () {
+            $(this).parents().parents(".box").hide();
+        })
+    })
+</script>
+</body>
+</html>
